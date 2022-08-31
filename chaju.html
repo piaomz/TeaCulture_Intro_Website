@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>茶具</title>
+<style type="text/css">
+body{
+	background-image:url(img/bg.png);
+	background-repeat : no-repeat ;
+	background-size:100%;
+	background-attachment:fixed;
+}
+#header {
+	width: 100%;
+	font-family: "楷体";
+	font-size:30px;
+}
+.headertext {
+	text-align:center;
+	border-style: none none none solid;
+	border-color:#7F7F7F;
+	border-width: 2px;
+	font-size: 30px;
+	vertical-align: middle;
+	display:table-cell;
+}
+.headertext2 {
+	margin:auto;
+	padding-top:21%;
+	padding-bottom:21%;
+	height:42%;
+}
+.headertext:hover {
+	text-align:center;
+	border-style: none none none solid;
+	background-color:#7F7F7F;
+	color:#FFF;
+	border-width: 2px;
+	font-size: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  height:100%;
+  vertical-align: middle;
+  
+}
+.dropdown-content {
+	position:absolute;
+z-index:10;
+    display:none;
+    position: absolute;
+    background-color: #7F7F7F;
+    min-width: 100%;
+}
+.dropdown-content2 {
+   border-style:none none solid none ;
+	background-color:#FFF;
+	border-color:#7F7F7F;
+	color:#000;
+	border-width: 2px;
+}
+.dropdown-content2:hover{
+   border-style:none none solid none;
+	background-color:#7F7F7F;
+	border-color:#7F7F7F;
+	color:#FFF;
+	border-width: 2px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.headtype{
+	font-size:30px;
+	font-family:"楷体";
+}
+.box{
+	width:100%;
+}
+.chahai{
+        display: block;
+}
+.chahe{
+        display: none;
+}
+.chaliu{
+        display: none;
+}
+.chahu{
+        display: none;
+}
+.chawan{
+        display: none;
+}
+.box .project{
+    width: 1600px;
+    margin: 20px auto;
+    display: flex;
+}
+.box .project .title{
+    list-style: none;
+    text-align: center;
+    margin: 5px 5px auto;
+}
+.box .project .title li{
+        width: 30px;
+        margin-bottom: 20px;
+        font-size:30px;
+        padding: 5px;
+        border-radius: 6px;
+		background-color: #7f7f7f;
+		color:#fff;
+    }
+.box .project .title li:hover{
+        background-color: #093;
+		color:#FFF;
+}
+.box .project a{
+	color: #FFF;
+	ext-decoration: none;
+	font-family:"楷体";
+}
+.box .project .content{
+    list-style: none;
+    margin: 10px;
+}
+.texttype{
+	font-size:28px;
+	font-family:"楷体";
+	margin:20px 5%;
+}
+.litext{
+	color:#fff;
+}
+.img{
+	text-align:center;
+}
+</style>
+<script>
+   function change(type) {
+       if (type =='chahai'){
+           chahai.style.display = 'block'
+           chahe.style.display = 'none'
+           chaliu.style.display = 'none'
+		   chahu.style.display = 'none'
+		   chawan.style.display = 'none'
+       }else if(type == 'chahe'){
+           chahai.style.display = 'none'
+           chahe.style.display = 'block'
+           chaliu.style.display = 'none'
+		   chahu.style.display = 'none'
+		   chawan.style.display = 'none'
+       }else if(type == 'chaliu'){
+           chahai.style.display = 'none'
+           chahe.style.display = 'none'
+           chaliu.style.display = 'block'
+		   chahu.style.display = 'none'
+		   chawan.style.display = 'none'
+       }else if(type == 'chahu'){
+           chahai.style.display = 'none'
+           chahe.style.display = 'none'
+           chaliu.style.display = 'none'
+		   chahu.style.display = 'block'
+		   chawan.style.display = 'none'
+       }else if(type == 'chawan'){
+           chahai.style.display = 'none'
+           chahe.style.display = 'none'
+           chaliu.style.display = 'none'
+		   chahu.style.display = 'none'
+		   chawan.style.display = 'block'
+       }
+   }
+</script>
+</head>
+
+<body>
+
+<div id="header">
+   <table width="100%" border="0" cellspacing="0">
+  <tr>
+    <td width="55%"><img src="img/header.png" width="502px"  height="70px" border="0"/></td>
+    
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('index.html')">首页</td>
+    <td class="headertext" width="7.5%">
+    <div class="dropdown" style="cursor:pointer;" onclick="window.open('kindsOfTea.html')">
+  	<div class="headertext2"><a>茶种</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>红茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>绿茶</a></div>
+		<div class="headertext2 dropdown-content2"><a>乌龙茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>花茶</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('historyOfTea.html')">
+    	<div class="headertext2"><a>茶史</a></div>
+  		<div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>神农</a></div>
+        <div class="headertext2 dropdown-content2"><a>商周</a></div>
+		<div class="headertext2 dropdown-content2"><a>三国</a></div>
+        <div class="headertext2 dropdown-content2"><a>西汉</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayu.html')">茶语</td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('chaju.html')">
+    <div class="headertext2" ><a>茶具</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>茶海</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶荷</a></div>
+		<div class="headertext2 dropdown-content2"><a>茶君</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶壶</a></div> 
+        <div class="headertext2 dropdown-content2"><a>茶碗</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayi.html')">茶艺</td>
+  </tr>
+</table>
+
+</div>
+<div>
+<img src="img/茶具bg.jpg"  style="margin-top:7px;" width="100%" height="400px"/>
+<img src="img/茶皿.png"  width="100%"/>
+</div>
+<div class="box">
+<div class="project">
+        <ul class="title">
+          <li onmouseover="change('chahai')"><a>茶海</a></li>
+            <li onmouseover="change('chahe')"><a>茶荷</a></li>
+          <li onmouseover="change('chaliu')"><a>茶道六君子</a></li>
+          <li onmouseover="change('chahu')"><a>茶壶</a></li>
+          <li onmouseover="change('chawan')"><a>茶碗</a></li>
+        </ul>
+        <ul id="content">
+            <li class="chahai" id="chahai">
+                <div class="img"><img src="img/茶海.jpg" height="350"/> </div>
+                <p class="texttype">茶海,又称茶盅或公道杯。形状似无柄的敞口茶壶。因乌龙茶的冲泡非常讲究时间，就是几秒十几秒之差，也会使得茶汤质量大大改变。所以即使是将茶汤从壶中倒出的短短十几秒时间，开始出来以及最后出来的茶汤浓淡非常不同。为避免浓淡不均，先把茶汤全部倒至茶海中，然后再分至杯中。同时可沉淀茶渣、茶末。现在也常用不锈钢的过滤器，置于茶海之上，令茶汤由滤器流入茶海，以滤去茶渣。此法我认为不可取，因不锈钢本身多少有些异味。至少用于闻香的二泡茶，不可用滤器。</p>
+                
+            </li>
+            <li class="chahe" id="chahe">
+            	<div class="img"><img src="img/茶荷.jpg" height="350"/></div>
+                <p class="texttype">茶荷的功用与茶则、茶漏类似，皆为置茶的用具，但茶荷更兼具赏茶功能。主要用途是将茶叶由茶罐移至茶壶。主要有瓷器、竹制品，既实用又可当艺术品，一举两得。它在置茶中也兼具以下多种功能：承装茶叶后，供人欣赏茶叶的色泽和形状，并据此评估冲泡方法及茶叶量多寡，之后才将茶叶倒入壶中。此外，也有人会在茶荷中将茶叶略为压碎，以增加茶汤浓度。</p>
+            </li>
+            <li class="chaliu" id="chaliu">
+                <div class="img"><img src="img/茶道六君子.jpg" height="350" /></div>
+                <p class="texttype">其中包括茶筒、茶则、茶夹、茶拨、茶针、茶漏:</p>
+                <p class="texttype">(1)茶筒：用来盛放茶道子。
+                (2)茶则：用来量取茶叶。
+                (3)茶夹：用来夹洗品饮对杯。
+                (4)茶拨：用来拨取茶叶。
+                (5)茶针：用来疏通壶嘴。
+                (6)茶漏：用来防止茶叶外漏。
+                </p>
+            </li>
+            <li class="chahu" id="chahu">
+                <div class="img"><img src="img/茶壶.jpg" height="350" /></div>
+                <p class="texttype">用来泡茶。紫砂壶因其特殊的双气孔结构，能吸收茶香茶色茶味，有"一壶不侍二茶"之说。多用来冲泡红茶、乌龙茶等。如冲泡乌龙茶，要先洗壶，置茶后，冲入热水后的第一道茶汤不饮用，用来洗壶。用茶汤浇淋紫砂壶表面。再次冲入热水后，用茶壶盖刮掉茶沫。用热水再次浇淋紫砂壶表面。</p>
+                <p class="texttype">由于壶的把、盖、底、形的细微差别，茶壶的基本形态就有200种。泡茶时，茶壶大小依饮茶人数多少而定。茶壶的质地很多，目前使用较多的是以紫砂陶壶或瓷器茶壶。</p>
+            </li>
+            <li class="chawan" id="chawan">
+                <div class="img"><img src="img/盖碗.jpg" height="350" /></p>
+                <p class="texttype">盖碗是一种上有盖、下有托，中有碗的汉族茶具。又称"三才碗"、"三才杯"，盖为天、托为地、碗为人，暗含天地人和之意。"茶托"又称"茶船"。盖碗茶，须用滚烫的开水冲一下碗，然后放入茶叶盛水加盖，沁茶的时间看茶叶数量和种类约为20秒至3分钟。在清雍正年间，盛行使用盖碗。</p>
+            </li>            
+        </ul>
+    </div>
+</div>
+<div><img src="img/bottom.png" width="100%" /></div>
+</body>
+</html>

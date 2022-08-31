@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>茶史</title>
+<meta name="discription" content="这是关于茶史的页面">
+<style type="text/css">
+body{
+	background-image:url(img/bg.png);
+	background-repeat : no-repeat ;
+	background-size:100%;
+	background-attachment:fixed;
+}
+#header {
+	width: 100%;
+	font-family: "楷体";
+	font-size:30px;
+}
+.headertext {
+	text-align:center;
+	border-style: none none none solid;
+	border-color:#7F7F7F;
+	border-width: 2px;
+	font-size: 30px;
+	vertical-align: middle;
+	display:table-cell;
+}
+.headertext2 {
+	margin:auto;
+	padding-top:21%;
+	padding-bottom:21%;
+	height:42%;
+}
+.headertext:hover {
+	text-align:center;
+	border-style: none none none solid;
+	background-color:#7F7F7F;
+	color:#FFF;
+	border-width: 2px;
+	font-size: 30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  height:100%;
+  vertical-align: middle;
+  
+}
+.dropdown-content {
+	position:absolute;
+z-index:10;
+    display:none;
+    position: absolute;
+    background-color: #7F7F7F;
+    min-width: 100%;
+}
+.dropdown-content2 {
+   border-style:none none solid none ;
+	background-color:#FFF;
+	border-color:#7F7F7F;
+	color:#000;
+	border-width: 2px;
+}
+.dropdown-content2:hover{
+   border-style:none solid solid solid ;
+	background-color:#7F7F7F;
+	border-color:#7F7F7F;
+	color:#FFF;
+	border-width: 4px;
+}
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+.circle{
+	height:125px;
+	width:125px;
+	border-radius:50%;
+	text-align:center;
+	border:solid 1px #000;
+}
+.text{
+	vertical-align: top;
+	margin-top:0;
+	word-wrap:break-word;
+	word-break:break-all;
+	overflow:hidden;
+	font-size: 20px;
+}
+.headOfChangeDescription{
+	text-align:center;
+	margin-top:80px;
+	margin-bottom:50px;
+	font-size:70px;color: #000;
+	font-family:STXinwei,SimSun,STHeiti;
+}
+.contentOfChangeDescription{
+	font-size:30px; color: #000;
+	padding:0px 10%;
+	font-family:STXinwei,SimSun,STHeiti;
+}
+</style>
+
+<script language="javascript">
+function changeText(id) {
+	if(history_1==id){
+		document.getElementById("headOfChangeDescription1").style.display="block";
+		document.getElementById("contentOfChangeDescription1").style.display="block";
+		document.getElementById("headOfChangeDescription2").style.display="none";
+		document.getElementById("contentOfChangeDescription2").style.display="none";
+		document.getElementById("headOfChangeDescription3").style.display="none";
+		document.getElementById("contentOfChangeDescription3").style.display="none";
+		document.getElementById("headOfChangeDescription4").style.display="none";
+		document.getElementById("contentOfChangeDescription4").style.display="none";
+	}else if(history_2==id){
+		document.getElementById("headOfChangeDescription1").style.display="none";
+		document.getElementById("contentOfChangeDescription1").style.display="none";
+		document.getElementById("headOfChangeDescription2").style.display="block";
+		document.getElementById("contentOfChangeDescription2").style.display="block";
+		document.getElementById("headOfChangeDescription3").style.display="none";
+		document.getElementById("contentOfChangeDescription3").style.display="none";
+		document.getElementById("headOfChangeDescription4").style.display="none";
+		document.getElementById("contentOfChangeDescription4").style.display="none";
+	}else if(history_3==id){
+		document.getElementById("headOfChangeDescription1").style.display="none";
+		document.getElementById("contentOfChangeDescription1").style.display="none";
+		document.getElementById("headOfChangeDescription2").style.display="none";
+		document.getElementById("contentOfChangeDescription2").style.display="none";
+		document.getElementById("headOfChangeDescription3").style.display="block";
+		document.getElementById("contentOfChangeDescription3").style.display="block";
+		document.getElementById("headOfChangeDescription4").style.display="none";
+		document.getElementById("contentOfChangeDescription4").style.display="none";
+	}else if(history_4==id){
+		document.getElementById("headOfChangeDescription1").style.display="none";
+		document.getElementById("contentOfChangeDescription1").style.display="none";
+		document.getElementById("headOfChangeDescription2").style.display="none";
+		document.getElementById("contentOfChangeDescription2").style.display="none";
+		document.getElementById("headOfChangeDescription3").style.display="none";
+		document.getElementById("contentOfChangeDescription3").style.display="none";
+		document.getElementById("headOfChangeDescription4").style.display="block";
+		document.getElementById("contentOfChangeDescription4").style.display="block";
+	}
+}
+
+</script>
+</head>
+
+<body>
+<div id="header">
+	<table width="100%" border="0" cellspacing="0">
+  <tr>
+    <td width="55%"><img src="img/header.png" width="502px"  height="70px" border="0"/></td>
+    
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('index.html')">首页</td>
+    <td class="headertext" width="7.5%">
+    <div class="dropdown" style="cursor:pointer;" onclick="window.open('kindsOfTea.html')">
+  	<div class="headertext2"><a>茶种</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>红茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>绿茶</a></div>
+		<div class="headertext2 dropdown-content2"><a>乌龙茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>花茶</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('historyOfTea.html')">
+    	<div class="headertext2"><a>茶史</a></div>
+  		<div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>神农</a></div>
+        <div class="headertext2 dropdown-content2"><a>商周</a></div>
+		<div class="headertext2 dropdown-content2"><a>三国</a></div>
+        <div class="headertext2 dropdown-content2"><a>西汉</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayu.html')">茶语</td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('chaju.html')">
+    <div class="headertext2" ><a>茶具</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>茶海</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶荷</a></div>
+		<div class="headertext2 dropdown-content2"><a>茶君</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶壶</a></div> 
+        <div class="headertext2 dropdown-content2"><a>茶碗</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayi.html')">茶艺</td>
+  </tr>
+</table>
+</div>
+    <table width="100%" border="0" cellspacing="0" style="margin-top:7px;">
+  		<tr>
+    		<td><img src="img/11.jpg" width="100%" height="400px" /></td>
+  		</tr>
+	</table>
+    <img src="img/ZHONGHUACHASHI.PNG" width="100%"/>
+<table align="center" width="80%" height="700px" border="1" cellspacing="0">
+<tr>
+	    <td width="700px">
+ 	       <table width="700px"  height="700px" border="0" cellspacing="0" cellpadding="0">
+         	<tr>
+    			<td id="history_1" class="history1" onclick="changeText(this)"><img src="img/4.jpeg" width="350px" height="350px" onmouseover="this.src='img/4h.jpg'" onmouseout="this.src='img/4.jpeg'" /></td>
+    			<td id="history_2" class="history2" onclick="changeText(this)"><img src="img/5.jpg" width="350px" height="350px" onmouseover="this.src='img/5h.jpg'" onmouseout="this.src='img/5.jpg'" /></td>
+  			</tr>
+  			<tr>
+    			<td id="history_3" class="history3" onclick="changeText(this)"><img src="img/6.jpg" width="350px" height="350px" onmouseover="this.src='img/6h.jpg'" onmouseout="this.src='img/6.jpg'" /></td>
+    			<td id="history_4" class="history4" onclick="changeText(this)"><img src="img/7.jpg" width="350px" height="350px" onmouseover="this.src='img/7h.jpg'" onmouseout="this.src='img/7.jpg'" /></td>
+  			</tr>
+			</table>
+        </td>
+	    <td  id="changeDescription" class="text"><div style="position:relative;"><img src="img/bg2.png" width="950" height="700" /><div style="position:absolute; width:100%;z-indent:2;left:0;top:0;">
+        	<p class="headOfChangeDescription" id="headOfChangeDescription1" style="display:block;">神农说</p><p class="contentOfChangeDescription" id="contentOfChangeDescription1" style="display:block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆羽根据《神农食经》&quot;茶茗久服，令人有力悦志&quot;的记载，认为饮茶始于神农时代，&quot;茶之为饮，发乎神农氏&quot;。（《茶经·六之饮》）神农即炎帝，与黄帝同为中国上古都部落首领。然而《神农食经》据今人考证成书在汉代以后饮用始于上古原始社会只是传说，不是信史。</p>
+    		<p class="headOfChangeDescription" id="headOfChangeDescription2" style="display:none;">商周说</p><p class="contentOfChangeDescription" id="contentOfChangeDescription2" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据东晋常璩所撰《华阳国志·巴志》载：巴子国&quot;土植五谷,牲具六畜......荼、蜜、灵龟、巨犀、山鸡、白雉、黄润鲜粉，皆纳贡之。其果实之珍者，树有荔枝，蔓有辛蒟，园有芳蒻、香茗。&quot;常璩明确指出，进贡的&quot;芳蒻、香茗&quot;不是采之野生，而是种之园林。芳蒻是一种香草，香茗指茶。此说法表明：生活在陕西南部的古代巴人才是中国最早用茶、种茶的民族，至少已有3000余年的用茶、种茶的历史。</p>
+    		<p class="headOfChangeDescription" id="headOfChangeDescription3" style="display:none;">三国说</p><p class="contentOfChangeDescription" id="contentOfChangeDescription3" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《三国志·吴书·韦曜传》有&quot;密赐荼荈以代酒&quot;，这种能代酒的饮料当为茶饮料，足以证明吴国宫廷已经饮茶。据此，《南窗纪谈》认为中国饮茶始于三国，《集古录》则认为始于魏晋。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三国时代东吴饮茶是确凿无疑，然而东吴之茶当传自巴蜀，巴蜀的饮茶要早于东吴，因此，中国的饮茶一定早于三国时代。</p>
+    		<p class="headOfChangeDescription" id="headOfChangeDescription4" style="display:none;">西汉说</p><p class="contentOfChangeDescription" id="contentOfChangeDescription4" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清代郝懿行在《证俗文》中指出：&quot;茗饮之法，始见于汉末，而已萌芽于前汉。司马相如凡将篇有荈诧，王褒僮约有武阳买茶。&quot;郝懿行认为饮茶始于东汉末，而萌芽于西汉。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王褒《僮约》中有&quot;烹荼尽具&quot;、《武阳买荼》，一般都认为&quot;买荼&quot;之&quot;荼&quot;为茶，而武阳即今四川彭山县，说明四川在西汉宣帝神爵三年（公元前59年），中国的饮茶不晚于公元前一世纪。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们认为中国的饮茶始于西汉，而饮茶晚于茶的食用、药用，中国人发现茶和用茶则远在西汉以前，甚至可以追溯到商周时期。</p></div></div></td>
+      
+      
+      </tr>
+	</table>
+	<img src="img/bottom.png" width="100%" />
+</body>
+</html>

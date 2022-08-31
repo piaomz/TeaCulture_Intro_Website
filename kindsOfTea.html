@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>茶之道 茶种</title>
+<meta name="discription" content="这是关于茶种的页面">
+<style type="text/css">
+body{
+	background-image:url(img/bg.png);
+	background-repeat : no-repeat ;
+	background-size:100%;
+	background-attachment:fixed;
+}
+#header {
+	width: 100%;
+	font-family: "楷体";
+	font-size:30px;
+}
+.headertext {
+	text-align:center;
+	border-style: none none none solid;
+	border-color:#7F7F7F;
+	border-width: 2px;
+	font-size: 30px;
+	vertical-align: middle;
+	display:table-cell;
+}
+.headertext2 {
+	margin:auto;
+	padding-top:21%;
+	padding-bottom:21%;
+	height:42%;
+}
+.headertext:hover {
+	text-align:center;
+	border-style: none none none solid;
+	background-color:#7F7F7F;
+	color:#FFF;
+	border-width: 2px;
+	font-size: 30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  height:100%;
+  vertical-align: middle;
+  
+}
+.dropdown-content {
+	position:absolute;
+z-index:10;
+    display:none;
+    position: absolute;
+    background-color: #7F7F7F;
+    min-width: 100%;
+}
+.dropdown-content2 {
+   border-style:none none solid none ;
+	background-color:#FFF;
+	border-color:#7F7F7F;
+	color:#000;
+	border-width: 2px;
+}
+.dropdown-content2:hover{
+   border-style:none solid solid solid ;
+	background-color:#7F7F7F;
+	border-color:#7F7F7F;
+	color:#FFF;
+	border-width: 4px;
+}
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+.text{
+	vertical-align: top;
+	margin-top:0;
+	word-wrap:break-word;
+	word-break:break-all;
+	overflow:hidden;
+	font-size: 20px;
+}
+.headOfChangeDescription{
+	text-align:center;
+	margin-top:80px;
+	margin-bottom:50px;
+	font-size:70px;color: #000;
+	font-family:STXinwei,SimSun,STHeiti;
+}
+.contentOfChangeDescription{
+	font-size:30px; color: #000;
+	padding:0px 10%;
+	font-family:STXinwei,SimSun,STHeiti;
+}
+</style>
+<script language="javascript">
+function changeText(id) {
+	if(kinds_1==id){
+		document.getElementById("headOfChangeDescription1").style.display="block";
+		document.getElementById("contentOfChangeDescription1").style.display="block";
+		document.getElementById("headOfChangeDescription2").style.display="none";
+		document.getElementById("contentOfChangeDescription2").style.display="none";
+		document.getElementById("headOfChangeDescription3").style.display="none";
+		document.getElementById("contentOfChangeDescription3").style.display="none";
+		document.getElementById("headOfChangeDescription4").style.display="none";
+		document.getElementById("contentOfChangeDescription4").style.display="none";
+	}else if(kinds_2==id){
+		document.getElementById("headOfChangeDescription1").style.display="none";
+		document.getElementById("contentOfChangeDescription1").style.display="none";
+		document.getElementById("headOfChangeDescription2").style.display="block";
+		document.getElementById("contentOfChangeDescription2").style.display="block";
+		document.getElementById("headOfChangeDescription3").style.display="none";
+		document.getElementById("contentOfChangeDescription3").style.display="none";
+		document.getElementById("headOfChangeDescription4").style.display="none";
+		document.getElementById("contentOfChangeDescription4").style.display="none";
+	}else if(kinds_3==id){
+		document.getElementById("headOfChangeDescription1").style.display="none";
+		document.getElementById("contentOfChangeDescription1").style.display="none";
+		document.getElementById("headOfChangeDescription2").style.display="none";
+		document.getElementById("contentOfChangeDescription2").style.display="none";
+		document.getElementById("headOfChangeDescription3").style.display="block";
+		document.getElementById("contentOfChangeDescription3").style.display="block";
+		document.getElementById("headOfChangeDescription4").style.display="none";
+		document.getElementById("contentOfChangeDescription4").style.display="none";
+	}else if(kinds_4==id){
+		document.getElementById("headOfChangeDescription1").style.display="none";
+		document.getElementById("contentOfChangeDescription1").style.display="none";
+		document.getElementById("headOfChangeDescription2").style.display="none";
+		document.getElementById("contentOfChangeDescription2").style.display="none";
+		document.getElementById("headOfChangeDescription3").style.display="none";
+		document.getElementById("contentOfChangeDescription3").style.display="none";
+		document.getElementById("headOfChangeDescription4").style.display="block";
+		document.getElementById("contentOfChangeDescription4").style.display="block";
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="header">
+<table width="100%" border="0" cellspacing="0">
+  <tr>
+    <td width="55%"><img src="img/header.png" width="502px"  height="70px" border="0"/></td>
+    
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('index.html')">首页</td>
+    <td class="headertext" width="7.5%">
+    <div class="dropdown" style="cursor:pointer;" onclick="window.open('kindsOfTea.html')">
+  	<div class="headertext2"><a>茶种</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>红茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>绿茶</a></div>
+		<div class="headertext2 dropdown-content2"><a>乌龙茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>花茶</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('historyOfTea.html')">
+    	<div class="headertext2"><a>茶史</a></div>
+  		<div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>神农</a></div>
+        <div class="headertext2 dropdown-content2"><a>商周</a></div>
+		<div class="headertext2 dropdown-content2"><a>三国</a></div>
+        <div class="headertext2 dropdown-content2"><a>西汉</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayu.html')">茶语</td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('chaju.html')">
+    <div class="headertext2" ><a>茶具</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>茶海</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶荷</a></div>
+		<div class="headertext2 dropdown-content2"><a>茶君</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶壶</a></div> 
+        <div class="headertext2 dropdown-content2"><a>茶碗</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayi.html')">茶艺</td>
+  </tr>
+</table>
+</div>
+    <table width="100%" border="0" cellspacing="0" style="margin-top:7px;">
+  		<tr>
+    		<td><img src="img/10.jpg" width="100%" height="400px" /></td>
+  		</tr>
+	</table>
+    <img src="img/colors_tea.PNG" width="100%" />
+	<table align="center"  width="80%" height="700px" border="1" cellspacing="0">
+  <tr>
+    <td id="kinds_1" width="350px" height="350px" onclick="changeText(this)"><img src="img/greenTea.png"s width="350px" height="350px" onmouseover="this.src='img/greenTeah.png'" onmouseout="this.src='img/greenTea.png'"></td>
+    <td rowspan="2" id="changeDescription" class="text"><div style="position:relative;"><img src="img/bg2.png" width="950" height="700" /><div style="position:absolute; width:100%;z-indent:2;left:0;top:0;">
+    	<p class="headOfChangeDescription" id="headOfChangeDescription1" style="display:block;">绿茶</p><p class="contentOfChangeDescription" id="contentOfChangeDescription1" style="display:block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绿茶（GreenTea），是中国的主要茶类之一，是指采取茶树的新叶或芽，未经发酵，经杀青、整形、烘干等工艺而制作的饮品。其制成品的色泽和冲泡后的茶汤较多的保存了鲜茶叶的绿色格调。常饮绿茶能防癌，降脂和减肥，对吸烟者也可减轻其受到的尼古丁伤害。这是我国产量最多的一类茶叶，其花色品种之多居世界首位。绿茶具有香高、味醇、形美、耐冲泡等特点。其制作工艺都经过杀青一揉捻一干燥的过程。由于加工时干燥的方法不同，绿茶又可分为炒青绿茶、烘青绿茶、蒸青绿茶和晒清绿茶。全国18个产茶省（区）都生产绿茶。我国绿茶花色品种之多居世界之首，每年出口数万吨，占世界茶叶市场绿茶贸易量的70％左右。</p>
+    	<p class="headOfChangeDescription" id="headOfChangeDescription2" style="display:none;">花茶</p><p class="contentOfChangeDescription" id="contentOfChangeDescription2" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;花茶（Scented tea），又名香片， 即将植物的花或叶或其果实泡制而成的茶，是中国特有的一类再加工茶。其是利用茶善于吸收异味的特点，将有香味的鲜花和新茶一起闷，茶将香味吸收后再把干花筛除，制成的花茶香味浓郁，茶汤色深。花茶又可细分为花草茶和花果茶。饮用叶或花的称之为花草茶，如荷叶、甜菊叶。饮用其果实的称之为花果茶，如：无花果、柠檬、山楂、罗汉果、有花果。其气味芬香并具有养生疗效。外形条索紧结匀整，色泽黄绿尚润；内质香气鲜灵浓郁，具有明显的鲜花香气，汤色浅黄明亮，叶底细嫩匀亮。花茶主要以绿茶、红茶或者乌龙茶作为茶坯、配以能够吐香 的鲜花作为原料，采用窨制工艺制作而成的茶叶。根据其所用的香花品种不同，分为茉莉花茶、玉兰花茶、桂花花茶、珠兰花茶等， 其中以茉莉花茶产量最大。</p>
+    	<p class="headOfChangeDescription" id="headOfChangeDescription3" style="display:none;">红茶</p><p class="contentOfChangeDescription" id="contentOfChangeDescription3" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;红茶，(Blacktea)。红茶在加工过程中发生了以茶多酚酶促氧化为中心的化学反应，鲜叶中的化学成分变化较大，茶多酚减少90%以上，产生了茶黄素、茶红素等新成分。香气物质比鲜叶明显增加。所以红茶具有红茶、红汤、红叶和香甜味醇的特征。我国红茶品种以祁门红茶最为著名，为我国第二大茶类。红茶与绿茶的区别，在于加工方法不同。红茶加工时不经杀青，而且萎凋，使鲜叶失云一部分水分，再揉捻（揉搓成条或切成颗粒），然后发酵，使所含的茶多酚氧化，变成红色的化合物。这种化合物一部分溶于水，一部分不溶于水，而积累在叶片中，从而形成红汤、红叶。红茶主要有小种红茶、工夫红茶和红碎茶三大类。</p>
+    	<p class="headOfChangeDescription" id="headOfChangeDescription4" style="display:none;">青茶（乌龙茶）</p><p class="contentOfChangeDescription" id="contentOfChangeDescription4" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乌龙茶（oolongtea），亦称青茶、半发酵茶及全发酵茶，品种较多，是中国几大茶类中，独具鲜明中国特色的茶叶品类。乌龙茶是经过采摘、萎凋、摇青、炒青、揉捻、烘焙等工序后制出的品质优异的茶类。叶片稍有红变，是介于绿茶与红茶之间的一种茶类。它既有绿茶的鲜浓，又有红茶的甜醇。因其叶片中间为绿色，叶缘呈红色，故有&quot;绿叶红镶边&quot;之称。</p></div></div>
+    </td>
+    <td id="kinds_2" width="350px" height="350px" onclick="changeText(this)"><img src="img/scentedTea.jpg" width="350px" height="350px" onmouseover="this.src='img/scentedTeah.jpg'" onmouseout="this.src='img/scentedTea.jpg'"></td>
+  </tr>
+  <tr>
+    <td id="kinds_3" width="350px" height="350px" onclick="changeText(this)"><img src="img/blackTea.jpg" width="350px" height="350px" onmouseover="this.src='img/blackTeah.jpg'" onmouseout="this.src='img/blackTea.jpg'"></td>
+    <td id="kinds_4" width="350px" height="350px" onclick="changeText(this)"><img src="img/oolongTea.jpg" width="350px" height="350px" onmouseover="this.src='img/oolongTeah.jpg'" onmouseout="this.src='img/oolongTea.jpg'"></td>
+  </tr>
+</table>
+
+    <img src="img/bottom.png" width="100%" />
+</body>
+</html>

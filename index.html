@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>茶之道</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper/swiper.min.css">
+<style type="text/css">
+a {text-decoration: none}
+body{
+	background-image:url(img/bg.png);
+	background-repeat : no-repeat ;
+	background-size:100%;
+	background-attachment:fixed;
+}
+#header {
+	width: 100%;
+	font-family: "楷体";
+	font-size:30px;
+}
+
+.headertext {
+	text-align:center;
+	border-style: none none none solid;
+	border-color:#7F7F7F;
+	border-width: 2px;
+	font-size: 30px;
+	vertical-align: middle;
+	display:table-cell;
+}
+.headertext2 {
+	margin:auto;
+	padding-top:21%;
+	padding-bottom:21%;
+	height:42%;
+}
+.headertext:hover {
+	text-align:center;
+	border-style: none none none solid;
+	background-color:#7F7F7F;
+	color:#FFF;
+	border-width: 2px;
+	font-size: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  height:100%;
+  vertical-align: middle;
+  
+}
+.dropdown-content {
+	position:absolute;
+z-index:10;
+    display:none;
+    position: absolute;
+    background-color: #7F7F7F;
+    min-width: 100%;
+}
+.dropdown-content2 {
+   border-style:none none solid none ;
+	background-color:#FFF;
+	border-color:#7F7F7F;
+	color:#000;
+	border-width: 2px;
+}
+.dropdown-content2:hover{
+   border-style:none none solid none;
+	background-color:#7F7F7F;
+	border-color:#7F7F7F;
+	color:#FFF;
+	border-width: 2px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.swiper-container {
+      width: 100%;
+      height: 500px;
+ }
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+
+
+
+.teatype {
+	font-size:30px;
+}
+
+.teatype:hover{
+	transform: scale(1.2);
+}
+
+
+.small_title {
+	font-family:"微软雅黑 Light";
+	font-size:35px;
+}
+
+.col {
+}
+
+.chaju1{
+	background:url(img/chahai.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	margin:5px;
+}
+.chaju1:hover{
+	background:url(img/chahaih.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	cursor:pointer;
+	margin:5px;
+}
+.chaju2{
+	background:url(img/chahe.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	margin:5px;
+}
+.chaju2:hover{
+	background:url(img/chaheh.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	cursor:pointer;
+	margin:5px;
+}.chaju3{
+	background:url(img/chaliu.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	margin:5px;
+}
+.chaju3:hover{
+	background:url(img/chaliuh.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	cursor:pointer;
+	margin:5px;
+}.chaju4{
+	background:url(img/chahu.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	margin:5px;
+}
+.chaju4:hover{
+	background:url(img/chahuh.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	cursor:pointer;
+	margin:5px;
+}
+.chaju5{
+	background:url(img/chawan.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	margin:5px;
+}
+.chaju5:hover{
+	background:url(img/chawanh.png);
+	background-repeat : no-repeat ;
+	background-size:100% 100%;
+	cursor:pointer;
+	margin:5px;
+}
+.circle{
+	height:125px;
+	width:125px;
+	border-radius:50%;
+	text-align:center;
+	border:solid 1px #000;
+}
+.text2{
+	font-size:30px; color: #000;
+	padding:0px 10%;
+	font-family:STXinwei,SimSun,STHeiti;	
+}
+</style>
+</head>
+
+<body background="img/bg.PNG">
+	<div id="header">
+    <table width="100%" border="0" cellspacing="0">
+  <tr>
+    <td width="55%"><img src="img/header.png" width="502px"  height="70px" border="0"/></td>
+    
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('index.html')">首页</td>
+    <td class="headertext" width="7.5%">
+    <div class="dropdown" style="cursor:pointer;" onclick="window.open('kindsOfTea.html')">
+  	<div class="headertext2"><a>茶种</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>红茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>绿茶</a></div>
+		<div class="headertext2 dropdown-content2"><a>乌龙茶</a></div>
+        <div class="headertext2 dropdown-content2"><a>花茶</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('historyOfTea.html')">
+    	<div class="headertext2"><a>茶史</a></div>
+  		<div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>神农</a></div>
+        <div class="headertext2 dropdown-content2"><a>商周</a></div>
+		<div class="headertext2 dropdown-content2"><a>三国</a></div>
+        <div class="headertext2 dropdown-content2"><a>西汉</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayu.html')">茶语</td>
+    <td class="headertext" width="7.5%"><div class="dropdown" style="cursor:pointer;" onclick="window.open('chaju.html')">
+    <div class="headertext2" ><a>茶具</a></div>
+    <div class="dropdown-content">
+    	<div class="headertext2 dropdown-content2"><a>茶海</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶荷</a></div>
+		<div class="headertext2 dropdown-content2"><a>茶君</a></div>
+        <div class="headertext2 dropdown-content2"><a>茶壶</a></div> 
+        <div class="headertext2 dropdown-content2"><a>茶碗</a></div>
+  	</div>
+    </div></td>
+    <td class="headertext" width="7.5%" style="cursor:pointer;" onclick="window.open('chayi.html')">茶艺</td>
+  </tr>
+</table>
+
+    </div>
+<div style="margin-top:7px;">
+ <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#kinds" style="width:100%; height:100%;"><img src="img/index1.jpg" width="100%"  height="100%" border="0"/></a></div>
+      <div class="swiper-slide"><a href="#history" style="width:100%; height:100%;"><img src="img/index2.jpg" width="100%"  height="100%" border="0"/></a></div>
+      <div class="swiper-slide"><a href="#yu" style="width:100%; height:100%;"><img src="img/chayu.jpg" width="100%"  height="100%" border="0"/></a></div>
+      <div class="swiper-slide"><a href="#set" style="width:100%; height:100%;"><img src="img/index3.jpg" width="100%"  height="100%" border="0"/></a></div>
+      <div class="swiper-slide"><a href="#yi" style="width:100%; height:100%;"><img src="img/index4.jpg" width="100%"  height="100%" border="0"/></a></div>
+    </div>
+  </div>
+<div class="col">
+<table width="100%"  border="0" >
+  <tr height="20%">
+    <td width="100%" height="100%">
+    <div class="small_title" id="kinds">
+    	<img src="img/colors_tea.PNG" width="100%"/>
+    </div>
+    <div>
+    <table width="100%" height="100%" border="0">
+  <tr height="100%">
+    <td width="25%" align="center">
+    	<p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;">
+    	  <img src="img/绿茶1.png" width="60%">
+    	  </a></p>
+    	<p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;"><font face="楷体">绿茶</font>
+  	  </a></p></td>
+    <td width="25%" align="center">
+    	 <p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;">
+    	   <img src="img/红茶1.png" width="60%">
+    	   </a></p>
+    	 <p><a class="teatype"><font face="楷体" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;">红茶</font>
+  	   </a></p></td>
+    <td width="25%" align="center">
+       	<p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;">
+       	  <img src="img/乌龙茶1.png" width="60%">
+       	  </a></p>
+       	<p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;"><font face="楷体">乌龙茶</font>
+     	  </a></p></td>
+    <td width="25%" align="center">
+        <p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;">
+          <img src="img/花茶1.png" width="60%">
+          </a></p>
+        <p><a class="teatype" onclick="window.open('kindsOfTea.html')"style="cursor:pointer;"><font face="楷体">花茶</font>
+        </a></p>
+        
+        </td>
+  </tr>
+</table>
+</div>
+    </td>
+  </tr>
+  <tr height="20%">
+    <td>
+    <div class="small_title" id="set"><img src="img/茶皿.PNG" width="100%"/></div>
+    <div style="width:90%;margin-left:5%">
+    <table width="100%" border="0">
+  <tr>
+    <td width="20%">
+    <div class="chaju1" onclick="window.open('chaju.html')">
+      <img src="img/touming.png" width="100%" />
+    </div>
+    </td>
+    <td width="20%">
+        <div class="chaju2" onclick="window.open('chaju.html')">
+      <img src="img/touming.png" width="100%" />
+    </div>
+    </td>
+    <td width="20%">    <div class="chaju3" onclick="window.open('chaju.html')">
+      <img src="img/touming.png" width="100%" />
+    </div></td>
+    <td width="20%">    <div class="chaju4" onclick="window.open('chaju.html')">
+      <img src="img/touming.png" width="100%" />
+    </div></td>
+    <td width="20%">    <div class="chaju5" onclick="window.open('chaju.html')">
+      <img src="img/touming.png" width="100%" />
+    </div></td>
+  </tr>
+</table>
+
+    </div>	  
+    </td>
+  </tr>
+  <tr height="20%">
+    <td>
+    <div class="small_title" id="history"><img src="img/ZHONGHUACHASHI.PNG" width="100%"/></div>
+    <div><table align="center" width="90%" border="0" cellspacing="0" style="margin-top:30px;">
+    	<tr>
+    	   	<td width="25%">
+            	<table width="100%" border="0" cellspacing="0" >
+    	   	  		<tr>
+    	   	    		<td><img class="circle" src="img/4.jpeg"/ onclick="window.open('historyOfTea.html')" style="cursor:pointer;"></td>
+    	   	    		<td><hr style="height:3px;border:none;border-top:3px solid black;" /></td>
+              		</tr>
+    	   	  		<tr>
+    	   	    		<td><hr style="height:200px;width:3px;border:none;border-left:3px solid black;" /></td>
+    	   	    		<td class="text2" style="width:75%;vertical-align: top;">
+                        <p style="text-align:center;">神农说</p>
+   	   	    		  	<p>陆羽根据《神农食经》&quot;茶茗久服，令人有力悦志&quot;的......</p>
+                        <p></p></td>			
+                    </tr>
+  	   	  			</table>
+            </td>
+           
+       		<td width="25%">
+            	<table width="100%" border="0" cellspacing="0">
+    	   	  		<tr>
+    	   	    		<td><img class="circle" src="img/5.jpg"/ onclick="window.open('historyOfTea.html')" style="cursor:pointer;"></td>
+    	   	    		<td><hr style="height:3px;border:none;border-top:3px solid black;" /></td>
+              		</tr>
+    	   	  		<tr>
+    	   	    		<td><hr style="height:200px;width:3px;border:none;border-left:3px solid black;" /></td>
+    	   	    		<td class="text2" style="width:75%;vertical-align: top;"><p style="text-align:center; margin-top:0;">商周说</p>
+   	    		      <p>据东晋常璩所撰《华阳国志·巴志》载：巴子国&quot;土植五谷......</p></td>
+  	   	  	  		</tr>
+  	   	  		</table>
+            </td>
+    		<td width="25%">
+            	<table width="100%" border="0" cellspacing="0">
+    	   	  		<tr>
+    	   	    		<td><img class="circle" src="img/6.jpg"/ onclick="window.open('historyOfTea.html')" style="cursor:pointer;"></td>
+    	   	    		<td><hr style="height:3px;border:none;border-top:3px solid black;" /></td>
+              		</tr>
+    	   	  		<tr>
+    	   	    		<td><hr style="height:200px;width:3px;border:none;border-left:3px solid black;" /></td>
+    	   	    		<td class="text2" style="width:75%;vertical-align: top;"><p style=" margin-top:0px; text-align:center;">三国说</p>
+   	    		      <p>《三国志·吴书·韦曜传》有&quot;密赐荼荈以代酒&quot;，这种能代......</p></td>
+  	   	  	  		</tr>
+  	   	  		</table>
+            </td>
+			<td width="25%">
+            	<table width="100%" border="0" cellspacing="0">
+    	   	  		<tr>
+    	   	    		<td><img class="circle" src="img/7.jpg"/ onclick="window.open('historyOfTea.html')" style="cursor:pointer;"></td>
+    	   	    		<td><hr style="height:3px;border:none;border-top:3px solid black;" /></td>
+              		</tr>
+    	   	  		<tr>
+    	   	    		<td><hr style="height:200px;width:3px;border:none;border-left:3px solid black;" /></td>
+    	   	    		<td class="text2" style="width:75%;vertical-align: top;"><p style="text-align:center;">西汉说</p>
+   	    		      <p>清代郝懿行在《证俗文》中指出：&quot;茗饮之法，始见于......</p></td>
+  	   	  	  		</tr>
+  	   	  		</table>
+            </td>
+  		</tr>
+   	</table></div>
+    </td>
+  </tr>
+  <tr height="20%">
+    <td>
+    <div class="small_title" id="yu"><img src="img/chatanchayu.PNG" width="100%"/></div>
+    <div><img src="img/chayu.jpg" width="100%" style="cursor:pointer;" onclick="window.open('chayu.html')"/></div>
+    </td>
+  </tr>
+  
+  <tr height="20%">
+    <td>
+    <div class="small_title" id="yi"><img src="img/chazhiyi.png" width="100%" /></div>
+    <div><img src="img/chayi.jpg" width="100%" style="cursor:pointer;" onclick="window.open('chayi.html')"/></div>
+    </td>
+  </tr>
+</table>
+<img src="img/意见反馈.png" width="100%"  style="cursor:pointer;" onclick="window.open('yijianfankui.html')"/>
+<img src="img/bottom.png" width="100%" /></div>
+
+  <!-- Swiper JS -->
+  <script src="swiper/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+
+</div>
+
+</body>
+</html>
